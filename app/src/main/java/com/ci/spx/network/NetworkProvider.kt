@@ -1,5 +1,6 @@
 package com.ci.spx.network
 
+import com.ci.spx.utils.Constants.Companion.URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -15,7 +16,7 @@ class NetworkProvider {
             .addInterceptor(httpLoggingInterceptor)
             .build()
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.spacexdata.com/v4/")
+            .baseUrl(URL)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())

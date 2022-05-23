@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph">
+
+    <fragment
+        android:id="@+id/launches"
+        android:name="com.ci.spx.Launches"
+        android:label="@string/launches"
+        tools:layout="@layout/launches" >
+
+        <action
+            android:id="@+id/action_launches_to_launchDetails"
+            app:destination="@id/launchDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/launchDetails"
+        android:name="com.example.cashdog.cashdog.BlankFragment2"
+        android:label="@string/LaunchDetails"
+        tools:layout="@layout/launch_details" />
+
+</navigation>

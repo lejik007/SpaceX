@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.main.LaunchDetails">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/LaunchDetails"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="128dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/forward"
+            app:layout_constraintStart_toStartOf="@+id/text2"
+            app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="155dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:text="@string/back"
+            app:layout_constraintEnd_toEndOf="@+id/text2"
+            app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
