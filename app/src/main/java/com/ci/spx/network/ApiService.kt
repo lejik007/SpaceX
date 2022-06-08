@@ -8,5 +8,6 @@ import retrofit2.http.POST
 
 interface ApiService {
     @POST("launches")
-    suspend fun getLaunches(@Body query: QueryBody): LaunchesResponse
+    suspend fun getLaunches(@Body query: String): LaunchesResponse
+//    suspend fun getLaunches(@Body query: QueryBody): LaunchesResponse
 }

@@ -1,5 +1,6 @@
 package com.ci.spx.dataclasses
 
+import com.ci.spx.dagger.AppModule
 import com.google.gson.annotations.SerializedName
 
 data class LaunchesResponse(

@@ -1,4 +1,4 @@
-package com.ci.spx.activities.main
+package com.ci.spx.ui
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

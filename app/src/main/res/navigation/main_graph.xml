@@ -8,7 +8,7 @@
         android:id="@+id/launches"
         android:name="com.ci.spx.Launches"
         android:label="@string/launches"
-        tools:layout="@layout/launches" >
+        tools:layout="@layout/launches_fragment" >
 
         <action
             android:id="@+id/action_launches_to_launchDetails"
@@ -18,6 +18,6 @@
         android:id="@+id/launchDetails"
         android:name="com.example.cashdog.cashdog.BlankFragment2"
         android:label="@string/LaunchDetails"
-        tools:layout="@layout/launch_details" />
+        tools:layout="@layout/launch_details_fragment" />
 
 </navigation>
