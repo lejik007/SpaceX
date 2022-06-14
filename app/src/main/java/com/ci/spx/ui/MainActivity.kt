@@ -1,17 +1,14 @@
 package com.ci.spx.ui
 
-import android.app.Application
 import android.content.Context
 import android.os.Bundle
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.ci.spx.R
-import com.ci.spx.dagger.AppComponent
 import com.ci.spx.databinding.ActivityMainBinding
 
 
@@ -23,13 +20,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        binding.textView1.text = "hi12121"
-        binding.textView2.text = "hi2"
         setContentView(R.layout.activity_main)
         navController = Navigation.findNavController(this, R.id.main_graph)
     }
-
-
 
     override fun onCreateView(name: String, context: Context, attrs: AttributeSet): View? {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)

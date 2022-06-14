@@ -29,7 +29,7 @@ class LaunchesViewModel(application: Application) : AndroidViewModel(application
         viewModelScope.launch {
             var queryBody: String = ""
             service.getLaunches(queryBody)
-            Log.d("12222", service.toString())
+            Log.d("Request", service.toString())
         }
     }
 }
