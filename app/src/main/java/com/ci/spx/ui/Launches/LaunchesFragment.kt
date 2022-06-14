@@ -8,8 +8,6 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import com.ci.spx.R
 import com.ci.spx.databinding.LaunchesFragmentBinding
-import com.ci.spx.network.ApiService
-import javax.inject.Inject
 
 class LaunchesFragment : Fragment() {
 
