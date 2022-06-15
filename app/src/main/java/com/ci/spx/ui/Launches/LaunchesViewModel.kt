@@ -21,13 +21,13 @@ class LaunchesViewModel(application: Application) : AndroidViewModel(application
 
     init {
         application.appComponent.inject(this)
+        test()
     }
 
     private fun test() {
         viewModelScope.launch {
-            var queryBody: String = ""
-            service.getLaunches(queryBody)
-            Log.d("Request", service.toString())
+            val result = service.getLaunches("").docs
+            Log.d("Request", result.toString())
         }
     }
 }

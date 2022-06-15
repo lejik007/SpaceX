@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/launches"
-        android:name="com.ci.spx.Launches"
+        android:name="com.ci.spx.ui.Launches.LaunchesFragment"
         android:label="@string/launches"
         tools:layout="@layout/launches_fragment" >
 
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/launchDetails"
-        android:name="com.example.cashdog.cashdog.BlankFragment2"
+        android:name="com.ci.spx.ui.Launches.LaunchDetailsFragment"
         android:label="@string/LaunchDetails"
         tools:layout="@layout/launch_details_fragment" />
 
